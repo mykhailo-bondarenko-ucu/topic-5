@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FlowerBucket {
-    List<FlowerPack> flowerPacks = new ArrayList<>();
+    private @Getter
+    final List<FlowerPack> flowerPacks = new ArrayList<>();
     private @Getter int price;
 
     public void addFlowerPack(FlowerPack flowerPack) {

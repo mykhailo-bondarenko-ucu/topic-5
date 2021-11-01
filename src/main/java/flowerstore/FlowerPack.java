@@ -14,6 +14,6 @@ public class FlowerPack {
     }
 
     public double getPrice(){
-        return flower.getPrice() * amount;
+        return flower.price() * amount;
     }
 }

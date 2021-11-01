@@ -1,7 +1,5 @@
 package flowerstore;
 
-import java.util.List;
-
 public class Store {
     public static FlowerBucket search(String query) {
         String[] words = query.split(" ");
@@ -14,7 +12,7 @@ public class Store {
             }
         }
         FlowerBucket ret = new FlowerBucket();
-        ret.addFlowerPack(new FlowerPack(new Flower(type), count));
+        ret.addFlowers(new FlowerPack(new Flower(type), count));
         return ret;
     }
 }
